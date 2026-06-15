@@ -1,0 +1,5 @@
+print("enter your name :")
+a=input()
+print("enter your age")
+b=int(input())
+print("Hello",a,"you will turn age",b+1,"next year")
