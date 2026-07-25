@@ -79,6 +79,8 @@ def Display(Directory_path , z  ):
         Total Number of scanned files : {Total_Files} \n
         Total Number of duplicate Files Found : {Deleted_Files} \n
         Total Number of duplicate files deleted : {Deleted_Files} \n """)
+    server.send_message(msg)
+    server.quit()
         
     
 def main():
