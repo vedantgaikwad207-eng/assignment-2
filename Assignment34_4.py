@@ -44,27 +44,10 @@ def display(x):
     cobj=open(x,"rb")
     File_Name=cobj.read()
     cobj.close()
-    html_body= """ 
-    <html>
-    <body>
-    <pre>Sir tumhi mhatla hota na image mi kashi create karto ata jamtay sir ani lay majja yetiye </pre>
-    <pre> Really Thank you sir, Enjoying the ayushya karan ata saglikade programming logic distay </pre>
-    <table colspan=2>
-    <tr>
-    <td><img src="cid:sir" width="100">
     
-    <td>piyush khairnar 
-    <br>CEO Mavellous Infosystem
-    </tr>
-    </table>
-    <body>
-    <html>
 
-    """
-    dobj=open("sir.png","rb")
-    Image=dobj.read()
-    msg.set_content(html_body,subtype="html")
-    msg.add_related(Image ,maintype="image",subtype="png",cid="<sir>" )
+   
+    msg.set_content(body)
     msg.add_attachment(File_Name,maintype="text",subtype="plain",filename=File)
 
     server.send_message(msg)
